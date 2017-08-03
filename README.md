@@ -11,3 +11,9 @@ comments.sh - A script to show the usage of comments
 substitution.sh - A script highlighting two methods of command substitution
 
 errors.sh - A script testing out the error handling functionality of BASH
+
+
+
+# One liners
+
+sudo find / -type f -perm /a+x | grep -v ".so" | grep bin | rev | cut -d/ -f 1 | rev | sort |uniq
